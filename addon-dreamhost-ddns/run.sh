@@ -11,7 +11,7 @@ sleep 5
 ls -l /usr/bin/dreamhost-ddns
 
 while true; do
-    /usr/bin/dreamhost-ddns \
+    bash /usr/bin/dreamhost-ddns \
         --api-key "$API_KEY" \
         --record "$DNS_RECORD"
 
