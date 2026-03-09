@@ -1,5 +1,7 @@
 #!/usr/bin/with-contenv bashio
 
+CONFIG_PATH=/data/options.json
+
 API_KEY=$(bashio::config 'api_key')
 DNS_RECORD=$(bashio::config 'dns_record')
 INTERVAL=$(bashio::config 'interval')
