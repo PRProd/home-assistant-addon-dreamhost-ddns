@@ -1,9 +1,9 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-ARG TARGETARCH
+ARG BUILD_ARCH
 
-COPY bin/${TARGETARCH}/dreamhost-ddns /usr/bin/dreamhost-ddns
+COPY ./bin/${BUILD_ARCH}/dreamhost-ddns /usr/bin/dreamhost-ddns
 COPY run.sh /run.sh
 COPY config.toml /config.toml
 WORKDIR /

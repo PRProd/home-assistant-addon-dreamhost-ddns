@@ -1,5 +1,5 @@
 name: DreamHost DDNS
-version: "1.0.15"
+version: "1.0.16"
 slug: dreamhost_ddns
 description: Update DreamHost DNS A record with current WAN IP
 startup: services
