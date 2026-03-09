@@ -7,6 +7,7 @@ INTERVAL=$(bashio::config 'interval')
 echo "Starting DreamHost DDNS updater"
 echo "Record: $DNS_RECORD"
 echo "Interval: $INTERVAL seconds"
+ls -l /usr/bin
 
 while true; do
     /usr/bin/dreamhost-ddns \
