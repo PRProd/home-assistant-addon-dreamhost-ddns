@@ -7,11 +7,9 @@ INTERVAL=$(bashio::config 'interval')
 echo "Starting DreamHost DDNS updater"
 echo "Record: $DNS_RECORD"
 echo "Interval: $INTERVAL seconds"
-sleep 5
-ls -l /usr/bin/dreamhost-ddns
 
 while true; do
-    bash /usr/bin/dreamhost-ddns \
+    /usr/bin/dreamhost-ddns \
         --api-key "$API_KEY" \
         --record "$DNS_RECORD"
 
