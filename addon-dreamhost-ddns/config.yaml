@@ -1,7 +1,8 @@
 name: DreamHost DDNS
-version: "1.0.17"
+version: "1.0.18"
 slug: dreamhost_ddns
-description: Update DreamHost DNS A record with current WAN IP
+description: Automatically update a DreamHost DNS A record with your public IP.
+url: https://github.com/PRProd/home-assistant-addon-dreamhost-ddns
 startup: services
 boot: auto
 init: false
@@ -11,14 +12,14 @@ arch:
   - armv7
 
 options:
+  dns_record: "ha.example.com"
   api_key: ""
-  dns_record: ""
   interval: 300
 
 schema:
-  api_key: str
   dns_record: str
-  interval: int
+  api_key: password
+  interval: int(30,86400)
 
 map:
   - config:rw
