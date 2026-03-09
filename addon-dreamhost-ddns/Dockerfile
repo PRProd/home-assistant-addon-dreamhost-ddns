@@ -7,4 +7,4 @@ COPY run.sh /run.sh
 RUN chmod +x /run.sh \
     && chmod +x /usr/bin/dreamhost-ddns
 
-CMD [ "/run.sh" ]
+CMD [ "/run.sh" ] 
