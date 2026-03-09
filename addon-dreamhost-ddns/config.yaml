@@ -4,8 +4,7 @@ slug: dreamhost_ddns
 description: Update DreamHost DNS A record with current WAN IP
 startup: services
 boot: auto
-arch:
-  - armv7
+arch: armv7
 
 options:
   api_key: ""
