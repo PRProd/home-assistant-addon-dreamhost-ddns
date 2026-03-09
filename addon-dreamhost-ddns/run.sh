@@ -11,7 +11,7 @@ echo "Record: $DNS_RECORD"
 echo "Interval: $INTERVAL seconds"
 
 while true; do
-    /usr/bin/dreamhost-ddns \
+    /usr/bin/dreamhost-ddns --verbose \
         --api-key "$API_KEY" \
         --record "$DNS_RECORD"
 
