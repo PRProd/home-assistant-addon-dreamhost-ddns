@@ -2,6 +2,9 @@
 
 CONFIG_PATH=/data/options.json
 
+bashio::config.require 'api_key'
+bashio::config.require 'dns_record'
+
 API_KEY=$(bashio::config 'api_key')
 DNS_RECORD=$(bashio::config 'dns_record')
 INTERVAL=$(bashio::config 'interval')
