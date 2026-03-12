@@ -8,8 +8,8 @@
 A lightweight Home Assistant add-on that keeps a **DreamHost DNS A record** updated with your current WAN IP.
 
 Perfect for:
-- Dynamic IP home internet users
 - Remote access to Home Assistant
+- Dynamic IP home internet users
 - Self-hosted services with changing IPs
 - Anyone who uses DreamHost for DNS hosting
 
@@ -45,7 +45,7 @@ Perfect for:
 
 | Setting       | Description                                     | Type     |
 |---------------|-------------------------------------------------|----------|
-| `api_key`     | Your DreamHost API key (with DNS permissions)  | password |
+| `api_key`     | Your [DreamHost API key](https://help.dreamhost.com/hc/en-us/articles/4407354972692-Connecting-to-the-DreamHost-API) (with DNS permissions)  | password |
 | `dns_record`  | DNS A record to update (e.g., `ha.example.com`) | string   |
 
 ### Optional Values
@@ -98,7 +98,7 @@ Logs are accessible from the add-on UI. Use the ``log_level`` setting to control
 ---
 
 ## Tips & Best Practices
- - Ensure your DreamHost API key has DNS permissions
+ - Ensure your [DreamHost API key](https://help.dreamhost.com/hc/en-us/articles/4407354972692-Connecting-to-the-DreamHost-API) has DNS permissions
  - For frequent IP changes, lower interval values (e.g., 120s) may help
  - Test your configuration with the add-on logs before leaving it running
 
@@ -106,7 +106,7 @@ Logs are accessible from the add-on UI. Use the ``log_level`` setting to control
 
 ## Common Issues
 If Home Assistant reports "_failed to start_", check:
- - API key and record are correct
+ - [API key](https://help.dreamhost.com/hc/en-us/articles/4407354972692-Connecting-to-the-DreamHost-API) and record are correct
  - Network connectivity
  - Firewall or proxy is not blocking outgoing HTTP calls
 
