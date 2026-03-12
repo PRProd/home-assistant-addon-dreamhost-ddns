@@ -1,5 +1,5 @@
 name: DreamHost DDNS
-version: "1.0.23"
+version: "1.0.24"
 slug: dreamhost_ddns
 description: Automatically update a DreamHost DNS A record with your public IP.
 url: https://github.com/PRProd/home-assistant-addon-dreamhost-ddns
