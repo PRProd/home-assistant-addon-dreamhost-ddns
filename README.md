@@ -3,6 +3,7 @@
 ![Home Assistant Add-on](https://img.shields.io/badge/Home%20Assistant-Addon-blue)
 ![DNS](https://img.shields.io/badge/DNS-Dynamic%20DNS-orange)
 ![DreamHost](https://img.shields.io/badge/Provider-DreamHost-lightgrey)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 A lightweight Home Assistant add-on that keeps a **DreamHost DNS A record** updated with your current WAN IP.
 
