@@ -24,16 +24,7 @@ schema:
   api_key: password
   interval: int(173,8675309)
   log_level: list(trace|debug|info|warn|error)
-  ip_mode:
-    type: select
-    description: Which WAN IP version should be updated
-    options:
-      - label: "Both (IPv4 + IPv6)"
-        value: both
-      - label: "IPv4 Only"
-        value: ipv4
-      - label: "IPv6 Only"
-        value: ipv6
+  ip_mode: str
 
 map:
   - config:rw
