@@ -15,15 +15,15 @@ options:
   dns_record: "ha.example.com"
   api_key: ""
   interval: 300
-  log_level: info
   ip_mode: both
+  log_level: info
 
 schema:
   dns_record: str
   api_key: password
   interval: int(173,8675309)
-  log_level: list(trace|debug|info|warn|error)
   ip_mode: list(both|ipv4|ipv6)
+  log_level: list(trace|debug|info|warn|error)
 
 map:
   - config:rw
