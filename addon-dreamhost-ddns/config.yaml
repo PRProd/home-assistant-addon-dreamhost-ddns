@@ -28,11 +28,11 @@ schema:
     type: select
     description: Which WAN IP version should be updated
     options:
-      - label: Both (IPv4 + IPv6)
+      - label: "Both (IPv4 + IPv6)"
         value: both
-      - label: IPv4 Only
+      - label: "IPv4 Only"
         value: ipv4
-      - label: IPv6 Only
+      - label: "IPv6 Only"
         value: ipv6
 
 map:
