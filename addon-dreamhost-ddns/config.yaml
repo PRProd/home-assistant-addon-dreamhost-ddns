@@ -24,7 +24,7 @@ schema:
   interval: int(173,8675309)
   log_level: list(trace|debug|info|warn|error)
   ip_mode:
-    type: select
+    type: list
     options:
       - label: Both (IPv4 + IPv6)
         value: both
