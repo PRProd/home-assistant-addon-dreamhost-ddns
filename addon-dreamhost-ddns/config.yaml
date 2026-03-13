@@ -1,7 +1,7 @@
 name: DreamHost DDNS
-version: "1.0.26"
+version: "1.1.0"
 slug: dreamhost_ddns
-description: Automatically update a DreamHost DNS A record with your public IP.
+description: Automatically updates Dreamhost A and AAAA records with your public IP.
 url: https://github.com/PRProd/home-assistant-addon-dreamhost-ddns
 startup: services
 boot: auto
@@ -12,7 +12,7 @@ arch:
   - armv7
 
 options:
-  dns_record: "ha.example.com"
+  dns_record: ""
   api_key: ""
   interval: 300
   ip_mode: both
